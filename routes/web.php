@@ -18,3 +18,4 @@ Route::get('/', function() {
 })->name('landing');
 
 Route::get('/store', [NotebooksController::class, 'index'])->name('store');
+
