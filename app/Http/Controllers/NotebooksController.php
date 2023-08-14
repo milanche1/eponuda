@@ -16,6 +16,7 @@ class NotebooksController extends Controller
     {
         $scrape = (new NotebookService('https://www.tehnomanija.rs/c/kompjuteri-hardware-i-kancelarijska-oprema/laptopovi-100304'))->scrape();
 
+
         return view('store', [
             'notebooks' => Notebook::paginate(20)
         ]);
